@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tony Tran — Projets</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <div class="glow-orb a"></div>
+  <div class="glow-orb b"></div>
+
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ── SIDEBAR NAV ── -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">Tony<br><span>Tran</span></a>
+
+    <a href="index.html" class="nav-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      Accueil
+    </a>
+    <a href="profil.html" class="nav-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>
+      Profil
+    </a>
+    <a href="projets.html" class="nav-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+        <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+      </svg>
+      Projets
+    </a>
+    <a href="formation.html" class="nav-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+      </svg>
+      Formation
+    </a>
+    <a href="competences.html" class="nav-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+      Compétences
+    </a>
+
+    <div class="nav-footer">© 2025 Tony Tran</div>
+  </nav>
+
+  <!-- ── CONTENU ── -->
+  <main>
+    <div class="page">
+
+      <p class="section-eyebrow">Réalisations</p>
+      <h1 class="section-title">Mes <em>Projets</em></h1>
+
+      <div class="projects-grid">
+
+        <!-- ── SARA ── -->
+        <div class="project-card featured">
+          <div class="project-card-wrapper">
+            <!-- Image Left -->
+            <div class="project-image">
+              <img src="assets/images/sara.png" alt="SARA Project">
+              <span class="project-year-badge">2026</span>
+            </div>
+
+            <!-- Content Right -->
+            <div class="project-content">
+              <h3 class="project-title">SARA - Système Autonome de Reconnaissance d'Armes</h3>
+              
+              <div class="project-tags-row">
+                <span class="tag">Python</span>
+                <span class="tag">YOLOv8</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Computer Vision</span>
+              </div>
+
+              <div class="project-sections">
+                <div class="project-section">
+                  <h4 class="section-label">Contexte</h4>
+                  <p>Détection d'armes en temps réel via YOLOv8. Projet avancé intégrant CV, backend robuste et déploiement edge.</p>
+                </div>
+
+                <div class="project-section">
+                  <h4 class="section-label">Objectifs</h4>
+                  <ul class="objectives-list">
+                    <li>Entraîner un modèle YOLOv8 avec mAP50 > 85%</li>
+                    <li>Déployer en temps réel sur CPU/GPU/Raspberry Pi</li>
+                    <li>Construire une API REST avec webhooks HMAC</li>
+                    <li>Exporter en ONNX pour l'edge computing</li>
+                  </ul>
+                </div>
+
+                <div class="project-section">
+                  <h4 class="section-label">Résultats</h4>
+                  <p>mAP50 = 89%, fonctionne hors-ligne, dashboard web temps réel, intégration avec caméra IP</p>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/trtony25/projet-sara-master" target="_blank" rel="noopener" class="btn-action btn-primary">
+                  <svg class="icon-btn" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                  Code source
+                </a>
+                <a href="docs/SARA_Soutenance_TI650.pdf" target="_blank" rel="noopener" class="btn-action btn-outline">
+                  <svg class="icon-btn" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  Voir la présentation
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Heart Disease Prediction ── -->
+        <div class="project-card featured">
+          <div class="project-card-wrapper">
+            <!-- Images Left (3 images grid) -->
+            <div class="project-image">
+              <div class="project-images-grid">
+                <img src="assets/images/heart-disease-1.png" alt="Corrélation des variables">
+                <img src="assets/images/heart-disease-2.png" alt="Matrice de confusion">
+                <img src="assets/images/heart-disease-3.png" alt="Comparaison des algorithmes">
+              </div>
+              <span class="project-year-badge">2025</span>
+            </div>
+
+            <!-- Content Right -->
+            <div class="project-content">
+              <h3 class="project-title">Heart Disease Prediction</h3>
+              
+              <div class="project-tags-row">
+                <span class="tag">Python</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">pandas</span>
+                <span class="tag accent-tag">ML</span>
+              </div>
+
+              <div class="project-sections">
+                <div class="project-section">
+                  <h4 class="section-label">Contexte</h4>
+                  <p>Modèle de classification pour prédire les risques de maladie cardiaque, en comparant trois algorithmes : Decision Tree, k-NN et Logistic Regression.</p>
+                </div>
+
+                <div class="project-section">
+                  <h4 class="section-label">Approche</h4>
+                  <ul class="objectives-list">
+                    <li>Analyse exploratoire des données et visualisations</li>
+                    <li>Comparaison de 3 algorithmes de classification</li>
+                    <li>Évaluation avec matrices de confusion et métriques</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/trtony25/PRJ-VSB-ML" target="_blank" rel="noopener" class="btn-action btn-primary">
+                  <svg class="icon-btn" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                  Code source
+                </a>
+                <a href="https://github.com/trtony25/PRJ-VSB-ML/blob/main/main.ipynb" target="_blank" rel="noopener" class="btn-action btn-outline">
+                  <svg class="icon-btn" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                  Notebook
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── DiveLog ── -->
+        <div class="project-card featured">
+          <div class="project-card-wrapper">
+            <!-- Image Left -->
+            <div class="project-image">
+              <img src="assets/images/divelog.png" alt="DiveLog Project">
+              <span class="project-year-badge">2025</span>
+            </div>
+
+            <!-- Content Right -->
+            <div class="project-content">
+              <h3 class="project-title">DiveLog</h3>
+              
+              <div class="project-tags-row">
+                <span class="tag">React</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Prisma</span>
+                <span class="tag">SQLite</span>
+                <span class="tag accent-tag">Full-Stack</span>
+              </div>
+
+              <div class="project-sections">
+                <div class="project-section">
+                  <h4 class="section-label">Contexte</h4>
+                  <p>Application web de journalisation de plongées avec cartographie interactive et gestion d'utilisateurs. Interface complète full-stack.</p>
+                </div>
+
+                <div class="project-section">
+                  <h4 class="section-label">Fonctionnalités</h4>
+                  <ul class="objectives-list">
+                    <li>Journalisation complète des plongées</li>
+                    <li>Cartographie interactive des sites</li>
+                    <li>Gestion multi-utilisateur</li>
+                    <li>Architecture full-stack moderne</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/trtony25/2025w-project-diveteam-cau0006-tra0210" target="_blank" rel="noopener" class="btn-action btn-primary">
+                  <svg class="icon-btn" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                  Code source
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Run Rover ── -->
+        <div class="project-card featured">
+          <div class="project-card-wrapper">
+            <!-- Year Badge (no image) -->
+            <div class="project-image">
+              <span class="project-year-badge">2024</span>
+            </div>
+
+            <!-- Content -->
+            <div class="project-content">
+              <h3 class="project-title">Run Rover</h3>
+              
+              <div class="project-tags-row">
+                <span class="tag">C</span>
+                <span class="tag">Structures de données</span>
+                <span class="tag">Algorithmique</span>
+                <span class="tag accent-tag">Systèmes</span>
+              </div>
+
+              <div class="project-sections">
+                <div class="project-section">
+                  <h4 class="section-label">Contexte</h4>
+                  <p>Algorithme d'optimisation du déplacement d'un rover martien. Implémentation de structures de données avancées pour la navigation intelligente.</p>
+                </div>
+
+                <div class="project-section">
+                  <h4 class="section-label">Objectifs</h4>
+                  <ul class="objectives-list">
+                    <li>Optimiser la trajectoire de déplacement</li>
+                    <li>Implémenter des structures de données avancées</li>
+                    <li>Algorithmes de navigation intelligente</li>
+                    <li>Performance optimale en environnement contraint</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/orchid127/roverrun-gr-E3" target="_blank" rel="noopener" class="btn-action btn-primary">
+                  <svg class="icon-btn" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                  Code source
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

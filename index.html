@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tony Tran — Accueil</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+  <!-- Ambient glow -->
+  <div class="glow-orb a"></div>
+  <div class="glow-orb b"></div>
+
+  <!-- Hamburger mobile -->
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ── SIDEBAR NAV ── -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">Mon<br><span>Portfolio</span></a>
+
+    <a href="index.html" class="nav-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      Accueil
+    </a>
+    <a href="profil.html" class="nav-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>
+      Profil
+    </a>
+    <a href="projets.html" class="nav-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+        <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+      </svg>
+      Projets
+    </a>
+    <a href="formation.html" class="nav-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+      </svg>
+      Formation
+    </a>
+    <a href="competences.html" class="nav-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+      Compétences
+    </a>
+
+    <div class="nav-footer">© 2025 Tony Tran</div>
+  </nav>
+
+  <!-- ── CONTENU ── -->
+  <main>
+    <div class="home-page">
+
+      <!-- grille de fond -->
+      <svg class="home-bg-lines" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)"/>
+      </svg>
+
+      <div class="home-badge">Disponible · Sep 2026</div>
+
+      <h1 class="home-name">
+        Tony<br><span class="accent">Tran.</span>
+      </h1>
+
+      <p class="home-tagline">
+        Étudiant en 1ère année d'école d'ingénieur à l'EFREI Paris · Développeur Logiciel/DevOps · En recherche d'un contrat d'apprentissage 24 mois à partir de septembre 2026.
+      </p>
+
+      <div class="home-actions">
+        <a href="projets.html" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          Voir mes projets
+        </a>
+        <a href="profil.html" class="btn btn-outline">Me contacter</a>
+      </div>
+
+      <!-- Quote Section -->
+      <div class="home-quote-section">
+        <div class="home-quote">
+          <div class="quote-bar"></div>
+          <blockquote>
+            Construire, apprendre, innover. Chaque ligne de code est une opportunité de progresser.
+          </blockquote>
+        </div>
+        
+        <div class="home-orbit-area">
+          <div class="orbit-container">
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+            <div class="orbit-dot dot-1"></div>
+            <div class="orbit-dot dot-2"></div>
+            <div class="orbit-dot dot-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Rapide Section -->
+      <div class="quick-nav-section">
+        <h2 class="quick-nav-title">Navigation Rapide <span class="accent-dot">✧</span></h2>
+        <div class="quick-nav-grid">
+          <a href="profil.html" class="quick-nav-card">
+            <div class="nav-card-icon">👤</div>
+            <div class="nav-card-title">Profil</div>
+            <div class="nav-card-desc">Qui suis-je ? Découvrez mon parcours et mes ambitions</div>
+            <div class="nav-card-decoration"></div>
+          </a>
+
+          <a href="projets.html" class="quick-nav-card">
+            <div class="nav-card-icon">🛰️</div>
+            <div class="nav-card-title">Projets</div>
+            <div class="nav-card-desc">Mes réalisations académiques et techniques</div>
+            <div class="nav-card-decoration"></div>
+          </a>
+
+          <a href="formation.html" class="quick-nav-card">
+            <div class="nav-card-icon">🎓</div>
+            <div class="nav-card-title">Certifications</div>
+            <div class="nav-card-desc">Formations et certifications obtenues</div>
+            <div class="nav-card-decoration"></div>
+          </a>
+
+          <a href="competences.html" class="quick-nav-card">
+            <div class="nav-card-icon">⚙️</div>
+            <div class="nav-card-title">Compétences</div>
+            <div class="nav-card-desc">Mes compétences techniques et humaines</div>
+            <div class="nav-card-decoration"></div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
